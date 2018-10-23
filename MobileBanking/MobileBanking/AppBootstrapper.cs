@@ -23,8 +23,11 @@ namespace MobileBanking
             RegisterServices();
 
             IView mainView = new MainView(RxApp.TaskpoolScheduler, RxApp.MainThreadScheduler, ViewLocator.Current);
+
             _navigationPage = mainView as NavigationPage;
+
             IViewStackService viewStackService = new ViewStackService(mainView);
+
             Locator.CurrentMutable.RegisterConstant(viewStackService, typeof(IViewStackService));
 
             viewStackService
