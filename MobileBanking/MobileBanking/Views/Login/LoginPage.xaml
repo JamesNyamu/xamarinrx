@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:BaseContentPage  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:MobileBanking.Views;assembly=MobileBanking.iOS"
+             xmlns:login="clr-namespace:MobileBanking.ViewModels.Login;assembly=MobileBanking.iOS"
+             x:TypeArguments="login:ILoginViewModel"
+             x:Class="MobileBanking.Views.Login.LoginPage">
+    <StackLayout Padding="10" Spacing="8">
+        <!-- Place new controls here -->
+        <Label Text="Welcome to Xamarin.Forms Rx Routing!" HorizontalOptions="Center" />
+        <Entry x:Name="EmailEntry" Placeholder="Email" HorizontalOptions="FillAndExpand" />
+        <Entry x:Name="PasswordEntry" Placeholder="Password" HorizontalOptions="FillAndExpand" />
+        <Button x:Name="SignInButton" Text="Sign In" HorizontalOptions="Center" />
+        <Button x:Name="CancelButton" Text="Cancel" HorizontalOptions="Center" />
+    </StackLayout>
+</views:BaseContentPage>
